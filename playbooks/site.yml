@@ -1,0 +1,8 @@
+---
+- name: Apply base configuration
+  hosts: servers
+  become: true
+  roles:
+    - base
+    - security
+    - docker
